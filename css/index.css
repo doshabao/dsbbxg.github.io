@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 在超小屏幕设备下 */
+@media screen and (max-width:768px) {
+    .header_nav ul li a{
+        font-size: 13px;
+    
+    }
+}
+
+/* 在中等屏幕下 */
+@media screen and (min-width:991px) {
+    /* .header_nav ul li {
+        padding: 0 10px !important;
+    } */
+   
+}
+
+
+/* 在超大屏幕下 */
+@media screen and (min-width:1200px) {
+   /* .container .row .header_nav ul li {
+        padding: 0 20px !important;
+    } */
+}
+
+header{
+    height: 110px;
+    line-height: 110px;
+    background-color: white;
+}  
+
+.logo a img{
+    max-width: 100%;
+    padding-left: 110px;
+}
+
+
+.header_nav ul li {
+    float: left;
+    width: 20%;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+}
+.header_nav ul li:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    font-weight: 700;
+}
+
+.header_nav ul li a{
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 16px;
+
+}
+
+/* banner 部门 */
+
+.banner {
+    padding: 0;
+}
+.banner a img{
+    width: 100%;
+}
+
+/* 课程服务 */
+.course{
+    height: 220px;
+    text-align: center;
+    background-color: white;
+}
+.course h1{
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+
+/* nav 模块 */
+.nav{
+    /* height: 275px; */   /* bug问题 有时间好好请教一下大佬 */
+    text-align: center;
+    background-color: white;
+}
+.nav .nav_md {
+   position: relative;
+   height: 275px;
+   margin: 0;
+   padding: 0;
+   background-color: white;
+}
+
+.nav .nav_md img{
+    padding-top: 10px;  
+}
+.nav div::after{
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 1px;
+    content: '';
+    background-color: #ededef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    padding: 0 10px;
+}
+
+.nav div h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav div span{
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+    transform: translateX(-50%);
+    font-weight: 700;
+}
+
+/* footer */
+
+.footer{ 
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: white;
+}
+.row .footer a{
+    /* display: block; */
+    text-decoration: none;
+    color: #3ab0a4;
+}
+.row .jt{
+    /* position: absolute;
+    top: 46.5%;
+    left: 53.1%;
+    transform: translateX(-50%); */
+} 
