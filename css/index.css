@@ -20,9 +20,8 @@ a{
 }
 /* 在超小屏幕设备下 */
 @media screen and (max-width:768px) {
-    .header_nav ul li a{
-        font-size: 13px;
-    
+     .header_nav ul li a{
+        font-size: 14px !important;
     }
 }
 
